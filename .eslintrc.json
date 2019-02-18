@@ -1,7 +1,13 @@
 {
   "extends": ["airbnb", "prettier"],
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "module-resolver"],
   "rules": {
-    "prettier/prettier": ["error"]
+    "prettier/prettier": ["error"],
+    "module-resolver/use-alias": 2
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
   }
 }
